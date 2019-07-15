@@ -1,0 +1,35 @@
+@import "../../styles/abstracts/mixins";
+
+
+.header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+
+    background: -moz-linear-gradient(top, #ebecf0 0%, #ffffff 28%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ebecf0 0%, #ffffff 28%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ebecf0 0%, #ffffff 28%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebecf0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+
+    .mobile-only {
+        @include respond-min(500px) {
+            display: none;
+        }
+    }
+
+    .desktop-only {
+        @include respond-max(500px) {
+            display: none;
+        }
+    }
+
+    nav{
+        width: 100%;
+    }
+}

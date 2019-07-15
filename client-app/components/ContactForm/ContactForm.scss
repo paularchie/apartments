@@ -1,0 +1,23 @@
+.contact-form {
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+
+    &-header {
+        text-align: center;
+    }
+
+    &-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .form-group {
+        display: flex;
+        flex-flow: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,13 @@
+.slide-show-container {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slide-show-item {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+}

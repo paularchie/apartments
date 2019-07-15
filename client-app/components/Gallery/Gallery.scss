@@ -1,0 +1,46 @@
+$image-height: 200px;
+$image-width: 200px;
+
+.image {
+    &-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-container {
+        position: relative;
+        width: $image-width;
+        height: $image-height;
+        margin: 0.5em;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.3s ease-out;
+        }
+
+        &:hover {
+            .overlay {
+                background: rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &.selected {
+            .overlay {
+                background: rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+}

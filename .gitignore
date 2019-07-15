@@ -1,0 +1,11 @@
+.vscode
+
+apartments-common/dist
+apartments-common/node_modules
+
+client-app/.next
+client-app/node_modules
+
+server/node_modules
+server/config 
+server/uploads

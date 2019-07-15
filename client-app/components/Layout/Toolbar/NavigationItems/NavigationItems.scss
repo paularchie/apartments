@@ -1,0 +1,15 @@
+@import "../../../../styles/abstracts/mixins";
+
+.navigation-items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+
+    @include respond-min(500px) {
+        flex-flow: row;
+    }
+}
